@@ -1,0 +1,222 @@
+
+*{
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   
+   background-color:lightslategray ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+.container{
+   position: relative;
+   width: 100%;
+   max-width: 1000px;
+   min-height: 1000px;
+   background: white;
+   margin: 50px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+
+}
+div.leftside{
+   position: relative;
+   background: #003147;
+   padding: 40px;
+}
+.profiletext{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 20px;
+   border-bottom:1px solid rgba(255,255,255,0.2); ;
+}
+div.imgbox{
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+div.imgbox img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.profiletext h2{
+   color: white;
+   font-size: 20px;
+   margin-top: 20px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.4em;
+}
+.profiletext h2 span{
+   font-size: o.8em;
+   font-weight: 200;
+}
+div.contactinfo{
+   padding-top: 40px;
+}
+.title{
+   color: white;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing:1px ;
+   margin-bottom: 20px;
+}
+.contactinfo{
+   position: relative;
+}
+.contactinfo ul li{
+   position: relative;
+   list-style: none;
+   margin: 10px,0px;
+   cursor: pointer;
+}
+.contactinfo ul .icon{
+   display: inline-block;
+   width: 30px;
+   font-size: 18px;
+   color:#03a9f4;
+}
+.contactinfo ul li span{
+   color: white;
+   font-weight: 500px;
+}
+.contactinfo.education li{
+   margin-bottom: 15px;
+}
+div.leftside ul li h5{
+   color: white;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing:1px ;
+   margin-bottom: 20px;
+}
+div.leftside ul li{
+   color: white;
+}
+div.rightside{
+   position: relative;
+   padding: 40px;
+   background-color: white;
+}
+.profile {
+ word-break: keep-all;
+  margin-right: 10px;
+   font-family:Arial;
+   font-weight: 400;
+   color: #003147;
+   padding-top: 20px;
+   margin-bottom: 20px;
+}
+.profile h2{
+   margin-bottom: 20px;
+   font-style: bolder;
+}
+.skills{
+   color: black;
+   margin-bottom: 50px;
+   font-size: 17px;
+}
+.skills:last-child{
+   margin-bottom: 0;
+}
+.skills ul {
+   padding-top: 20px;
+   margin-bottom: 15px;
+}
+.skills ul li{
+   font-family: Arial;
+   font-weight: 500;
+   font-style: normal;
+   color: #003147;
+}
+.experience{
+   margin-bottom: 50px;
+   font-size: 17px;
+}
+.experience ul{
+   padding-top: 20px;
+   margin-bottom: 15px;
+}
+.experience ul li{
+   font-family: Arial;
+   font-weight: 500;
+   font-style: normal;
+   color: #003147;
+}
+h3{
+   color: black;
+   margin-bottom: 0;
+   text-transform: uppercase;
+   font-size:large;
+   font-weight: bolder;
+   padding-top: 20px;
+}
+button{
+color: white;
+background-color:#003147;
+border-radius: 5px;
+border-width: 7px;
+font-display: bolder;
+margin-left: 30rem;     
+}
+@media (max-width: 780px) {
+.container{
+   grid-template-columns: 1fr;
+   max-width: 90%;
+}
+.leftside, .rightside{
+   padding: 20px;
+}
+div.imgbox {
+   width: 150px;
+   height: 150px;
+}
+.profiletext h2{
+font-size: 18px;
+}
+}
+@media (max-width: 640px) {
+   body{
+      display: block;
+      padding: 20px;
+   }
+   .container{
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      margin: 0;
+   }
+   .leftside, .rightside{
+     padding: 20px;
+   }
+   div.imgbox {
+      width: 120px;
+      height: 120px;
+   }
+   .profiletext h2{
+   font-size: 16px;
+   }
+   .title, h3{
+      font-size: medium;
+   } 
+   .skills, .experience{
+      font-size: 15px;
+   }
+}
+
+
+   
